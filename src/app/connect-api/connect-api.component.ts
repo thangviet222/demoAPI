@@ -13,9 +13,9 @@ export class ConnectApiComponent implements OnInit {
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
-    this.httpClient.get('http://202.160.1.102:8084/api/aq').subscribe(
+    this.httpClient.get('https://reqres.in/api/users?page=2').subscribe(
       data => {
-      console.log(data)
+      this.data_aq = data['data']
     })
   }
 

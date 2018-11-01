@@ -1,6 +1,6 @@
 export class aq {
-    id:number;
-    date: Date;
-    district : string;
-    value : number;
+    avatar:string;
+    first_name:string;
+    last_name:string;
+    id : number
 }
